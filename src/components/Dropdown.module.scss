@@ -1,0 +1,50 @@
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/constants/colors';
+
+h1 {
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.dropDown {
+  @include flexbox.flexbox(center, center);
+  flex-direction: column;
+  width: 20rem;
+  background-color: transparent;
+}
+.dropDownBtn {
+  background-color: transparent;
+  border: solid 2px colors.$GRAYA;
+  width: 20rem;
+  height: 2rem;
+  margin-bottom: 2px;
+}
+.select {
+  color: colors.$BLACK;
+}
+.hidden {
+  display: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: transparent;
+  border: solid colors.$GRAYA;
+  overflow: auto;
+  height: 100px;
+  width: 20rem;
+}
+.dropBtn {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.dropBtn:hover {
+  background-color: colors.$GRAYA;
+}
+.searcher {
+  padding-left: 30px;
+}

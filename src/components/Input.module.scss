@@ -1,0 +1,42 @@
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/constants/colors';
+
+h1 {
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+.input {
+  @include flexbox.flexbox(center, center);
+
+  background-color: transparent;
+  border: solid;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+.errorText {
+  color: colors.$RED;
+  font-size: small;
+}
+.errorcolor {
+  color: colors.$GRAY6;
+}
+.correct {
+  color: colors.$GREEN;
+}
+.input_email {
+  width: 90%;
+  height: 90%;
+  border: none;
+}
+.input_password {
+  width: 90%;
+  height: 90%;
+  border: none;
+}
+.passwordShow_btn {
+  border: none;
+  color: colors.$GRAY6;
+  background-color: transparent;
+}

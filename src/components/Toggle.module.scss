@@ -1,0 +1,29 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/mixins/flexbox';
+
+h1 {
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+.toggle_part {
+  @include flexbox.flexbox(center, center);
+  background-color: colors.$GRAYA;
+  width: 20rem;
+  height: 3rem;
+  padding: 2px;
+  border-radius: 30px;
+}
+.toggle_btn {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 30px;
+  color: colors.$GRAY6;
+  font-weight: 1000;
+}
+.clicked {
+  background-color: colors.$WHITE;
+  color: colors.$BLACK;
+}
