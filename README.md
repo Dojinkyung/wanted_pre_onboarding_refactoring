@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# 원티드 프리온보딩 코스
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://62752146961c837f778363cd--rococo-meerkat-98b8ff.netlify.app/
 
-## Available Scripts
+이 프로젝트는 [Create React App](https://github.com/facebook/create-react-app) 로 만들었습니다.
 
-In the project directory, you can run:
+## 원티드 프리온 보딩 코스  프론트엔드 선발 과제 
 
-### `npm start`
+toggle, tab, input, dropdown의 기능을 구현하였습니다.
+![image](https://user-images.githubusercontent.com/63532503/167140416-586b458d-a93d-4563-ab74-4d482967e66d.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+----
+### Toggle
+클릭하면  useState에 true, false가 바뀌게 하였습니다. true 와 false 에 따라 classname에 clicked라는 css 스타일이 들어갈 수 있도록 조건부 연산자를 이용하였습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tab
 
-### `npm test`
+클릭하면 useState에 버튼의 id를 받아와 탭의 위치가 바뀌게 하였습니다. id에 따라 css 스타일이 들어갈 수 있도록 조건부 연산자를 이용하였습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Input
 
-### `npm run build`
+입력받는 변화는 useState를 이용하였습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```const EMAIL_RE = /^[A-Za-z0-9-_]+@[A-Za-z0-9-]+\.[A-Za-z0-9-]+/.test(event.currentTarget.value)```을 이용하여 이메일 주소의 형식을 확인하였습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+input 안에 아이콘을 사용하기 위해 두 가지를 설치하였습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm install @fortawesome/free-regular-svg-icons`
 
-### `npm run eject`
+`npm install @fortawesome/react-fontawesome`
+### Slider
+ <input type='range'>이용하였습니다.
+ input의 value를 useState를 이용해 받아 숫자로 보여주었습니다.
+ 
+### Dropdown
+Dropdown에서 <select>와 <option>을 사용하면 박스가 위로 올라가는 현상이 있어 Dropdown 박스를 리스트를 이용하여 만들어 주었습니다.
+useMemo와 filter를 이용하여 검색기능을 수행합니다.
+async await와 fetch를 이용하여 코인의 정보를 받아왔습니다.  
+받아온 코인들을 map을 이용하여 리스트로 만들어주었습니다.
+리스트를 클릭하면 클릭한 리스트의 text를 버튼으로 받아갈 수 있도록 하였습니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
