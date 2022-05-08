@@ -1,13 +1,13 @@
 # 원티드 프리온보딩 코스
 
-https://62752146961c837f778363cd--rococo-meerkat-98b8ff.netlify.app/
+https://62772518f49edf000892dbe8--rococo-meerkat-98b8ff.netlify.app/
 
 이 프로젝트는 [Create React App](https://github.com/facebook/create-react-app) 로 만들었습니다.
 
 ## 원티드 프리온 보딩 코스  프론트엔드 선발 과제 
 
-toggle, tab, input, dropdown의 기능을 구현하였습니다.
-![image](https://user-images.githubusercontent.com/63532503/167140416-586b458d-a93d-4563-ab74-4d482967e66d.png)
+toggle, tab, input, dropdown 의 기능을 구현하였습니다.
+![image](https://user-images.githubusercontent.com/63532503/167278730-2c3d033e-2168-4aa4-8ec5-a623ff822b22.png)
 
 ----
 ### Toggle
